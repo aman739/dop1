@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/peppa"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/item_c"
+        android:hint="Username"
+        android:padding="25dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toTopOf="@id/pass"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@color/white"
+        android:hint="Password"
+        android:padding="25dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/forokr"
+        android:hint="Email"
+        android:padding="20dp"
+        android:textColorHint="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/pass" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_tok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#19d3c0"
+        android:src="@drawable/ic_baseline_check_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/pass"
+        app:layout_constraintRight_toRightOf="@id/pass"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/left"
+        android:backgroundTint="@color/white"
+        android:hint="Login"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:cornerRadius="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_marginBottom="350dp"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
